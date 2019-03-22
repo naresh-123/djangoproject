@@ -1,0 +1,62 @@
+<html>
+<head>
+    <titel>Contactfrom</titel>
+     <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    h1{
+        color:red;
+        font-family: "Arial Narrow";
+
+    }
+    form{
+        border:2px red solid;
+        background-color:lightgreen;
+    }
+    label{
+        width: 200px;
+        color:darkred;
+    }
+    #fid{
+        color:red;
+    }
+    input{
+        width: 200px;
+    }
+    #sid{
+        width:80px;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form>
+                <div class="header">
+                <h1>Customer Details</h1></div>
+                <center>
+                <label id="fid">Enter your first name : &nbsp;&nbsp;</label>
+                    <input type="text" name="fname" autocomplete="off"><br><br>
+    <label>Enter your last name  :&nbsp;&nbsp;</label>
+    <input type="text" name="lname" autocomplete="off"><br><br>
+    <label>Enter user name  :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+    <input type="text" name="uname" autocomplete="off"><br><br>
+    <label>Enter your password  :&nbsp;&nbsp;</label>
+    <input type="password" name="password"autocomplete="off"><br><br>
+                </center>
+                <center>
+    <input type="submit" value="submit" id="sid" class="btn btn-success text-black">
+    <input type="reset" value="clear" id="sid"class="btn btn-danger text-back">
+                    </center>
+</form>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
