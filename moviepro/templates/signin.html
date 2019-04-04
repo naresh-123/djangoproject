@@ -1,0 +1,58 @@
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Loginform</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<a href="/sing/">singin</a>
+</head>
+<style>
+    form{
+        text-align: center;
+        background: rosybrown;
+        margin-top:100px;
+        width: 250px;
+        height: 350px;
+        padding-top: 20px;
+    }
+    input[name]{
+        width: 200px;
+        height:30px;
+    }
+    input[value]{
+        color: navajowhite;
+        width: auto;
+        background: green;
+
+    }
+label{
+    width: 220px;
+    color: -webkit-font-smoothing: antialiased;;
+}
+    body{
+        background: saddlebrown;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <center>
+            <form method="POST">
+    {% csrf_token %}
+                <h3>--LOGIN FORM--</h3>
+    <label>enter your name:</label>
+    <input type="text" name="uname" placeholder="username"><br><br>
+    <label>enter your password:</label>
+    <input type="password" name="pwd" placeholder="password"><br><br>
+                <input type="submit" value="submit">
+    <input type="reset" value="clear">
+</table>
+            </form></center>
+            </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Movie data</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+    body{
+        background-color: coral;
+    }
+    table{
+        background-color: beige;
+    }
+  a{
+        padding-right: 150px;
+        color: red;
+      width: 200px;
+      font-size:20px;
+
+    }
+    td{
+        height:50px;
+        width: 50px;
+        text-align: center;
+    }
+input{
+    font-size: 20px;
+}
+</style>
+</head>
+<body>
+<center>
+    <h1>Welcome To Movie World</h1>
+<div class="container">
+  <div class="jumbotron">
+      <a href="/telugu/">Telugu</a>
+<a href="/english/">English</a>
+<a href="/hindhu/">Hindhi</a>
+</center>
+    </div>
+    </div>
+</head>
+<body>
+<center>
+{% csrf_token %}
+<table border="2">
+    <thead>
+    <th>Director name</th>
+    <th>hero name</th>
+    <th>heroin name</th>
+    <th>product name</th>
+    <th>release date</th>
+    </thead>
+    {% for i in tdata %}
+    <tbody>
+    <tr>
+    <td>{{i.director_name}}</td>
+    <td>{{i.hero_name}}</td>
+    <td>{{i.heroin_name}}</td>
+    <td>{{i.product_name}}</td>
+    <td>{{i.released_date}}</td>
+    </tr>
+    </tbody>
+    {% endfor %}
+</table>
+    <a href="/dentails/"><h2>Booknow</h2></a>
+</center>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+<head>
+     <title>Movie data</title>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<style>
+    input{
+        font-size: 17px;
+    }
+    label{
+        font-size: 20px;
+        font-family: Anusha;
+    }
+    body{
+        background-color: coral;
+    }
+    h1{
+        color: aqua;
+    }
+</style>
+</head>
+
+<body>
+<form method="POST">
+    {% csrf_token %}
+<center>
+    <h1>BOOK HERE</h1>
+<div class="container">
+  <div class="row">
+      <div class="col-md-12">
+         <label> M0VIE NAME  : </label>
+          <input type="text" name="moviename" required><br>
+          <label> USER NAME:</label>
+          <input type="text" name="uname" required><br>
+          <label> PASSWORD:</label>
+          <input type="password" name="pwd" required  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"><br>
+          <label>MOBILE NUMBER :</label>
+          <input type="number" name="mobile" required><br>
+          <label>ADHAR NUMBER  : </label>
+          <input type="text" name="adhra" required><br>
+          <label>SHOW TIME     :</label>
+          <input type="datetime-local" name="show" required><br>
+          <input type="submit" value="Book"></input>
+  </div>
+  </div>
+</div>
+
+</center>
+</form>
+</body>
+</html>
